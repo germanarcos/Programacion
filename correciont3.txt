@@ -1,0 +1,17 @@
+De la hoja 3 de pseudocodigo:
+
+Problema 10: Bien
+Problema 11: Sólo muestra los múltiplos de 3. Además hay que contarlos.
+Problema 12: Bien
+Problema 13: Sólo muestra los múltiplos. Además hay que contarlos.
+Problema 14: Mal
+Problema 15: Bien
+Problema 16: Bien
+Problema 17: Imprime, pero falta contar y sumar los múltiplos de 2
+Problema 18: Bien. Hacerlo sin usar array de char
+Problema 19: 
+Problema 20: No se puede hacer con subprogramas ahora
+Problema 21: Bien
+Problema 22: Bien
+Problema 25: 
+Problema 27: 
