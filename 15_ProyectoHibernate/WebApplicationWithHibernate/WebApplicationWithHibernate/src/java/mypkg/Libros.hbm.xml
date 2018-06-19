@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-ene-2018 11:47:00 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mypkg.Libros" table="libros" catalog="biblioteca" optimistic-lock="version">
+        <id name="codigo" type="java.lang.Integer">
+            <column name="codigo" />
+            <generator class="identity" />
+        </id>
+        <property name="titulo" type="string">
+            <column name="titulo" length="50" not-null="true" />
+        </property>
+        <property name="autor" type="string">
+            <column name="autor" length="30" not-null="true" />
+        </property>
+        <property name="anno" type="int">
+            <column name="anno" not-null="true" />
+        </property>
+        <property name="numeroEjemplares" type="int">
+            <column name="numero_ejemplares" not-null="true" />
+        </property>
+        <set name="prestamoses" table="prestamos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="codigo_libro" not-null="true" />
+            </key>
+            <one-to-many class="mypkg.Prestamos" />
+        </set>
+    </class>
+</hibernate-mapping>
